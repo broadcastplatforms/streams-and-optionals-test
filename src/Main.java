@@ -1,12 +1,13 @@
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
 
 public class Main {
 
     public static void main(String[] args) {
         countInstances();
         findFirstOdd();
+        findWordsEndingWith();
         mapOptionals();
     }
 
@@ -23,6 +24,12 @@ public class Main {
 
         System.out.println("First odd number: ");
         System.out.println("First odd number: ");
+    }
+
+    // find any words that end with an 'e' or 's' in the string and print the result
+    static void findWordsEndingWith() {
+        String text = "less more high low see fly fast slow codes";
+        System.out.println("Words ending with an 'e' or 's': " );
     }
 
     // print the age of the person or throw an exception if they don't have one
