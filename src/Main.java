@@ -5,16 +5,10 @@ import java.util.Optional;
 public class Main {
 
     public static void main(String[] args) {
-        countInstances();
         findFirstOdd();
         findWordsEndingWith();
+        countInstances();
         mapOptionals();
-    }
-
-    // print how many instances of each word are in the list e.g. "{red=1, "green=2, "blue=3}"
-    static void countInstances() {
-        List<String> colours = Arrays.asList("blue", "red", "green", "blue", "green", "blue");
-        System.out.println("Colour count: ");
     }
 
     // print the first odd number in the list and if there isn't one return -1
@@ -25,11 +19,16 @@ public class Main {
         System.out.println("First odd number: ");
         System.out.println("First odd number: ");
     }
-
     // find any words that end with an 'e' or 's' in the string and print the result
     static void findWordsEndingWith() {
         String text = "less more high low see fly fast slow codes";
         System.out.println("Words ending with an 'e' or 's': " );
+    }
+
+    // print how many instances of each word are in the list e.g. "{red=1, "green=2, "blue=3}"
+    static void countInstances() {
+        List<String> colours = Arrays.asList("blue", "red", "green", "blue", "green", "blue");
+        System.out.println("Colour count: ");
     }
 
     // print the age of the person or throw an exception if they don't have one
