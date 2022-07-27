@@ -5,23 +5,9 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
-        sortList();
-        findDuplicates();
         countInstances();
         findFirstOdd();
         mapOptionals();
-    }
-
-    // sort the list of ints using the Stream API and print the result
-    static void sortList() {
-        List<Integer> ints = Arrays.asList(10, 32, 56, 7, 11, 88, 15, 76, 43, 30);
-        System.out.println("Sorted ints: ");
-    }
-
-    // find all the duplicate elements in the list using the Stream API and print them
-    static void findDuplicates() {
-        List<Integer> ints = Arrays.asList(10, 32, 10, 7, 11, 88, 15, 11, 43, 32);
-        System.out.println("Duplicates: ");
     }
 
     // print how many instances of each word are in the list e.g. "{red=1, "green=2, "blue=3}"
@@ -49,8 +35,8 @@ public class Main {
     }
 
     public static class Person {
-        private String name;
-        private Integer age;
+        private final String name;
+        private final Integer age;
 
         public Person(String name) {
             this(name, null);
